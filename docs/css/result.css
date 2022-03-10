@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#root {
+  font-size: 0;
+  max-width: 3.75rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.form-field {
+  border: 0.01rem solid #ccc;
+  margin-bottom: 0.15rem;
+  padding: 0.06rem;
+}
+
+.form-field .title {
+  font-weight: bold;
+}
+
+.value-field {
+  margin-top: 0.06rem;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 1;
+  height: 0.46rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  font-size: 0.16rem;
+}
+
+.input-field button {
+  font-size: 0.16rem;
+  width: 0.46rem;
+  height: 0.46rem;
+  padding: 0 0.1rem;
+  border: 0.01rem solid #ccc;
+  margin-left: 0.06rem;
+  cursor: pointer;
+}
+
+.btns-field button {
+  text-align: center;
+  padding: 0;
+  line-height: 0.5rem;
+  border: 0.01rem solid #179b16;
+  display: block;
+  width: 100%;
+  font-size: 0.16rem;
+  cursor: pointer;
+}
+
+.btns-field button:first-child {
+  background-color: #179b16;
+  color: #fff;
+}
+
+#outputField {
+  padding: 0.15rem;
+  font-size: 0.16rem;
+}
+
+.hint-field {
+  display: none;
+}
+
+.hint-field_visible {
+  display: block;
+}
+
+.mask {
+  width: 100%;
+  max-width: 3.75rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.hint {
+  font-size: 0.16rem;
+  padding: 0.15rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hint_success {
+  background-color: #fff;
+  border: 0.01rem solid #179b16;
+  color: #179b16;
+}
+
