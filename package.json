@@ -1,0 +1,65 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "It can generate a unique password based on some information you provide",
+  "private": true,
+  "scripts": {
+    "target": "browserslist",
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "build.gh-pages": "webpack --config webpack.prod.gh-pages.js",
+    "build.extension": "webpack --config webpack.prod.extension.js",
+    "lint": "eslint src public",
+    "prettier": "prettier --write src public",
+    "test": "npm run build && node live-server.test.js",
+    "test.gh-pages": "npm run build.gh-pages && node live-server.test.gh-pages.js",
+    "test.extension": "npm run build.extension && node live-server.test.extension.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsweibo/password-generator.git"
+  },
+  "keywords": [
+    "password-generator"
+  ],
+  "author": "jsweibo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsweibo/password-generator/issues"
+  },
+  "homepage": "https://github.com/jsweibo/password-generator#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "clipboard": "^2.0.10",
+    "core-js": "^3.21.1",
+    "crypto-browserify": "^3.12.0",
+    "regenerator-runtime": "^0.13.9",
+    "stream-browserify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "browserslist": "^4.20.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-cli": "^9.1.0",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.2",
+    "prettier": "^2.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}

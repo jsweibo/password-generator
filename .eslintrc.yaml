@@ -1,0 +1,15 @@
+root: true
+env:
+  browser: true
+  node: true
+  es6: true
+  serviceworker: true
+parserOptions:
+  ecmaVersion: 2019
+plugins:
+  - prettier
+rules:
+  prettier/prettier: error
+extends:
+  - eslint:recommended
+  - prettier
