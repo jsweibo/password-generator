@@ -1,0 +1,17 @@
+{
+  "start_url": "index.html",
+  "name": "jsweibo's password generator",
+  "short_name": "Password Generator",
+  "description": "It can generate a unique password based on some information you provide",
+  "display": "fullscreen",
+  "theme_color": "#07c160",
+  "background_color": "#07c160",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
