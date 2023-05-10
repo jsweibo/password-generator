@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="theme-color" content="#07c160" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/rem.js"></script>
+    <script defer src="js/root.js"></script>
+    <title><%- htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <form>
+          <div class="form-field">
+            <div class="title">PasswordType</div>
+            <div class="value-field select-field">
+              <select name="passwordType" id="passwordType" required>
+                <option value="0">HYBRID_TYPE</option>
+                <option value="1">ALPHABETIC_AND_DIGITAL_TYPE</option>
+                <option value="2">ALPHABETIC_TYPE</option>
+                <option value="3">DIGITAL_TYPE</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">PasswordLength</div>
+            <div class="value-field input-field">
+              <input
+                type="number"
+                name="passwordLength"
+                id="passwordLength"
+                placeholder="[4, 20]"
+                min="4"
+                max="20"
+                required
+              />
+              <button type="button">C</button>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">PublicKey</div>
+            <div class="value-field input-field">
+              <input name="publicKey" id="publicKey" placeholder="" required />
+              <button type="button">C</button>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">PrivateKey</div>
+            <div class="value-field input-field">
+              <input
+                type="password"
+                name="privateKey"
+                id="privateKey"
+                placeholder=""
+                required
+              />
+              <button type="button">T</button>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">Date</div>
+            <div class="value-field input-field">
+              <input type="date" name="date" id="date" required />
+            </div>
+          </div>
+          <div class="btns-field">
+            <button type="submit">Generate</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

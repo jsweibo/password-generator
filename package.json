@@ -1,0 +1,59 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "It can generate a unique password based on some information you provide",
+  "private": true,
+  "scripts": {
+    "target": "browserslist",
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "build.gh-pages": "webpack --config webpack.prod.gh-pages.js",
+    "build.extension": "webpack --config webpack.prod.extension.js",
+    "lint": "eslint src public",
+    "prettier": "prettier --write src public",
+    "test": "npm run build && node live-server.test.js",
+    "test.gh-pages": "npm run build.gh-pages && node live-server.test.gh-pages.js",
+    "test.extension": "npm run build.extension && node live-server.test.extension.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsweibo/password-generator.git"
+  },
+  "keywords": [
+    "password-generator"
+  ],
+  "author": "jsweibo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsweibo/password-generator/issues"
+  },
+  "homepage": "https://github.com/jsweibo/password-generator#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "clipboard": "^2.0.11",
+    "core-js": "^3.30.2",
+    "crypto-browserify": "^3.12.0",
+    "regenerator-runtime": "^0.13.11",
+    "stream-browserify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^8.3.0",
+    "browserslist": "^4.21.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.8",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
